@@ -1,0 +1,82 @@
+body{
+    background-image: url("hovedside.png");
+    background-size: cover;
+    background-position: cover;
+    background-attachment: fixed;
+}
+#box1{
+    border: none;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15rem;
+}
+#box2{
+    border: none;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+#box3{
+    border: none;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+#box4{
+    border: none;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15rem;
+}
+#box5{
+    border: none;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    font-size: larger;
+    font-style: "Press Start 2P";
+    background-color: bisque;
+    padding: 5px;
+    border: 1px solid black;
+}
+#box6{
+    border: none;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+p{
+   text-align: center;
+   font-size: large;
+}
+
+button{
+    background-color: aqua;
+    transition-duration: 0.4s;
+    font-family: "Press Start 2P";
+    padding: 5px;
+}
+
+
+button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: gray;
+}
+
+button:active{
+    transform: scale(1.025);
+    cursor: pointer;
+}
+
+.credits_tekst{
+    background-color: bisque;
+    color: black;
+}
