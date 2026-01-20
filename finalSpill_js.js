@@ -806,7 +806,6 @@ function switchPokemonIkkeDod() {
     console.log(ikkeAktivHP)
     
     if (Number(ikkeAktivHP) > 0){
-        console.log("den andre pokemon er ikke død, kan bytte")
         switchPokemon("Jonas", 0)
     }
     
@@ -829,13 +828,11 @@ function switchPokemon(navn, dodBool) {
         if (trainerJonas[0].activePokemon.name == trainerJonas[0].pokemon1.name) {
             trainerJonas[0].activePokemon = trainerJonas[0].pokemon2
             trainerJonas[0].pokemon1 = midlertidigLagring
-            console.log("pokemon1 switchet ut")
 
         }
         else {
             trainerJonas[0].activePokemon = trainerJonas[0].pokemon1
             trainerJonas[0].pokemon2 = midlertidigLagring
-            console.log("pokemon2 switchet ut")
         }
     }
     else if (navn == "Anton") {
