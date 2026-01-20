@@ -49,7 +49,6 @@ let poke2IMGEl = document.querySelector(".poke2IMG")
 let pokeball2El = document.querySelector("#pokeball2")
 let pokeball4El = document.querySelector("#pokeball4")
 
-
 let loadingEL = document.querySelector(".loading")
 let loadingTextEL = document.querySelector(".loadingText")
 
@@ -65,13 +64,6 @@ let pickedmoveAnton = {
     name: "",
     power: 0
 }
-
-
-
-
-
-
-
 
 //pokemonFunc()
 
@@ -789,8 +781,6 @@ let midlertidigHealth = 0
 // variabelen dodBool brukes til å avgjøre om den pokemonen. variabelen "navn" brukes for å sjekke hvilken av spilleren som funksjonen skal kjøres for
 // Der Jonas er spilleren selv, og Anton er navnet for AI-en.
 
-
-
 function switchPokemonIkkeDod() {
     //funksjonen skal gjøre det mulig å bytte ut hvilken pokemon man har som aktiv, men kun dersom den andre pokemonen ikke er død
     console.log("")
@@ -803,13 +793,10 @@ function switchPokemonIkkeDod() {
     else {ikkeAktiv = trainerJonas[0].pokemon1}
 
     let ikkeAktivHP = ikkeAktiv.HP
-    console.log(ikkeAktivHP)
     
     if (Number(ikkeAktivHP) > 0){
         switchPokemon("Jonas", 0)
     }
-    
-
 }
 
 
@@ -835,6 +822,7 @@ function switchPokemon(navn, dodBool) {
             trainerJonas[0].pokemon2 = midlertidigLagring
         }
     }
+
     else if (navn == "Anton") {
         poke2IMGEl.classList.add("pokemonDead")
         pokeball2El.src = "pokeballGray.png"
@@ -843,6 +831,7 @@ function switchPokemon(navn, dodBool) {
         }, 500);
         poke2IMGEl.classList.remove("pokemonDead")
         let midlertidigLagring = trainerAnton[0].activePokemon
+
         if (trainerAnton[0].activePokemon.name == trainerAnton[0].pokemon1.name) {
             trainerAnton[0].activePokemon = trainerAnton[0].pokemon2
             trainerAnton[0].pokemon1 = midlertidigLagring
